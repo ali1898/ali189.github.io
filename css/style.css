@@ -1,0 +1,54 @@
+@font-face {
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 900;
+  src: url(../fonts/woff/poppins-bold-webfont.woff) format(woff);
+}
+@font-face {
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/woff/poppins-bold-webfont.woff) format(woff);
+}
+@font-face {
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 600;
+  src: url(../fonts/woff/poppins-semibold-webfont.woff) format(woff);
+}
+@font-face {
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 500;
+  src: url(../fonts/woff/poppins-medium-webfont.woff) format(woff);
+}
+@font-face {
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/woff/poppins-regular-webfont.woff) format(woff);
+}
+@font-face {
+  font-family: poppins;
+  font-style: normal;
+  font-weight: 300;
+  src: url(../fonts/woff/poppins-light-webfont.woff) format(woff);
+}
+:root {
+  --color-DB3C30: #db3c30;
+  --color-F44336: #f44336;
+  --color-FFFFFF: #ffffff;
+  --color-F5F5F5: #f5f5f5;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Poppins;
+}
