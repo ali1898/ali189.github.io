@@ -62,15 +62,15 @@ body {
 
 /* -------------------Top Bar----------------- */
 /* .header {
-}
-.header-container {
-}
-.topbar {
 } */
-/* .nav {
+.header-container {
+  background-color: var(--color-F44336);
+}
+/* .topbar {
+}
+.nav {
 } */
 .container {
-  background-color: var(--color-F44336);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -210,6 +210,7 @@ body {
   background-color: var(--color-000000);
   border: none;
   padding: 10px;
+  cursor: pointer;
 }
 .search-block-top__item {
   background-color: var(--color-000000);
@@ -255,4 +256,54 @@ body {
 .heading__mony {
   font-weight: 100;
   font-size: 14px;
+}
+
+/* ---------------------------Apollo Main Nav------------------- */
+.apolloMainNav {
+}
+.container {
+}
+.row {
+}
+.row-categories {
+}
+.row-categories__apollo_vertical_menu {
+}
+.title-block {
+}
+.title-block__text {
+}
+.block-content {
+}
+.verticalmenu {
+}
+.navbar {
+}
+.navbar__items {
+}
+.navbar__item {
+}
+.navbar-dropdown-menu__title {
+}
+.items {
+}
+.items__item {
+}
+.items__link {
+}
+.items__img {
+}
+.items-content {
+}
+.items-content__title {
+}
+.items-content__link {
+}
+.items-content__oldPrice {
+}
+.items-content__money {
+}
+.items-content__Price {
+}
+.items-content__money {
 }
