@@ -121,6 +121,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
+  color: var(--color-201215);
 }
 .dropdown-menu__link:hover {
   font-weight: 900;
