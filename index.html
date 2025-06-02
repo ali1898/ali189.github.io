@@ -108,7 +108,7 @@
             <div class="header-main">
                 <div class="container">
                     <div class="header-wrap">
-                        <div class="row">
+                        <div class="header-wrap-row">
                             <!-- Header Left -->
                             <div class="header-left">
                                 <div class="header__logo">
@@ -158,24 +158,25 @@
         <!-- Apollo Main Nav -->
         <div class="apolloMainNav">
             <div class="container">
-                <div class="row">
+                <div class="apollo-row">
                     <div class="row-categories">
                         <div class="row-categories__apollo_vertical_menu">
                             <div class="title-block">
-                                <span class="title-block__text">
-                                    Categories
-                                    <i class="fa fa-angle-down"></i>
-                                </span>
+                                <span class="title-block__text">Categories</span>
+                                <i class="fa fa-angle-down"></i>
                             </div>
                             <div class="block-content">
                                 <div class="verticalmenu">
                                     <div class="navbar">
                                         <ul class="navbar__items">
+
                                             <li class="navbar__item">
                                                 <a href="#" class="navbar__link">
-                                                    <img src="images/catecories/navbar_categories/vertical_icon_1.png"
-                                                        alt="" class="navbar__pic">
-                                                    <span class="navbar__title">Fashion & Clothing</span>
+                                                    <div class="navbar__pictitle">
+                                                        <img src="images/catecories/navbar_categories/vertical_icon_1.png"
+                                                            alt="" class="navbar__pic">
+                                                        <span class="navbar__title">Fashion & Clothing</span>
+                                                    </div>
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
                                                 <div class="navbar-dropdown-menu">
@@ -224,25 +225,27 @@
 
                                             <li class="navbar__item">
                                                 <a href="#" class="navbar__link">
-                                                    <img src="images/catecories/navbar_categories/vertical_icon_2.png"
-                                                        alt="" class="navbar__pic">
-                                                    <span class="navbar__title">Electronics & Computer</span>
+                                                    <div class="navbar__pictitle">
+                                                        <img src="images/catecories/navbar_categories/vertical_icon_2.png"
+                                                            alt="" class="navbar__pic">
+                                                        <span class="navbar__title">Electronics & Computer</span>
+                                                    </div>
                                                 </a>
                                             </li>
 
                                             <li class="navbar__item">
                                                 <a href="#" class="navbar__link">
-                                                    <img src="images/catecories/navbar_categories/vertical_icon_3.png"
-                                                        alt="" class="navbar__pic">
-                                                    <span class="navbar__title">Toys, Kids & Baby</span>
+                                                    <div class="navbar__pictitle">
+                                                        <img src="images/catecories/navbar_categories/vertical_icon_3.png"
+                                                            alt="" class="navbar__pic">
+                                                        <span class="navbar__title">Toys, Kids & Baby</span>
+                                                    </div>
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
-                                                <div class="navbar-dropdown-menu">
-                                                    <div class="navbar-dropdown-menu__row">
-                                                        <div class="navbar-dropdown-menu__items">
-
-                                                            <h3 class="navbar-dropdown-menu__title">Bestseller</h3>
-
+                                                <div class="navbar-dropdown-toy">
+                                                    <div class="navbar-dropdown-toy__row">
+                                                        <h3 class="navbar-dropdown-toy__title">Bestseller</h3>
+                                                        <div class="navbar-dropdown-toy__items">
                                                             <div class="items">
                                                                 <div class="items__item">
                                                                     <a href="#" class="items__link">
@@ -257,9 +260,9 @@
                                                                             Patchwork Dress W Waist Belt
                                                                         </a>
                                                                     </h5>
-                                                                    <div class="items-content__oldPrice">
+                                                                    <!-- <div class="items-content__oldPrice">
                                                                         <span class="items-content__money">$76.66</span>
-                                                                    </div>
+                                                                    </div> -->
                                                                     <div class="items-content__Price">
                                                                         <span class="items-content__money">$68.99</span>
                                                                     </div>
@@ -280,9 +283,9 @@
                                                                             Patchwork Dress W Waist Belt
                                                                         </a>
                                                                     </h5>
-                                                                    <div class="items-content__oldPrice">
+                                                                    <!-- <div class="items-content__oldPrice">
                                                                         <span class="items-content__money">$76.66</span>
-                                                                    </div>
+                                                                    </div> -->
                                                                     <div class="items-content__Price">
                                                                         <span class="items-content__money">$68.99</span>
                                                                     </div>
@@ -303,9 +306,9 @@
                                                                             Patchwork Dress W Waist Belt
                                                                         </a>
                                                                     </h5>
-                                                                    <div class="items-content__oldPrice">
+                                                                    <!-- <div class="items-content__oldPrice">
                                                                         <span class="items-content__money">$76.66</span>
-                                                                    </div>
+                                                                    </div> -->
                                                                     <div class="items-content__Price">
                                                                         <span class="items-content__money">$68.99</span>
                                                                     </div>
@@ -326,9 +329,9 @@
                                                                             Patchwork Dress W Waist Belt
                                                                         </a>
                                                                     </h5>
-                                                                    <div class="items-content__oldPrice">
+                                                                    <!-- <div class="items-content__oldPrice">
                                                                         <span class="items-content__money">$76.66</span>
-                                                                    </div>
+                                                                    </div> -->
                                                                     <div class="items-content__Price">
                                                                         <span class="items-content__money">$68.99</span>
                                                                     </div>
@@ -342,46 +345,52 @@
 
                                             <li class="navbar__item">
                                                 <a href="#" class="navbar__link">
-                                                    <img src="images/catecories/navbar_categories/vertical_icon_4.png"
-                                                        alt="" class="navbar__pic">
-                                                    <span class="navbar__title">Fashion & Clothing</span>
+                                                    <div class="navbar__pictitle">
+                                                        <img src="images/catecories/navbar_categories/vertical_icon_4.png"
+                                                            alt="" class="navbar__pic">
+                                                        <span class="navbar__title">Home, Garden & Tools</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li class="navbar__item">
+                                                <a href="#" class="navbar__link">
+                                                    <div class="navbar__pictitle">
+                                                        <img src="images/catecories/navbar_categories/vertical_icon_5.png"
+                                                            alt="" class="navbar__pic">
+                                                        <span class="navbar__title">Decor & furniture</span>
+                                                    </div>
+                                                </a>
+                                            </li>
+
+                                            <li class="navbar__item">
+                                                <a href="#" class="navbar__link">
+                                                    <div class="navbar__pictitle">
+                                                        <img src="images/catecories/navbar_categories/vertical_icon_6.png"
+                                                            alt="" class="navbar__pic">
+                                                        <span class="navbar__title">Sports & Outdoors</span>
+                                                    </div>
                                                     <i class="fa fa-angle-down"></i>
                                                 </a>
                                             </li>
 
                                             <li class="navbar__item">
                                                 <a href="#" class="navbar__link">
-                                                    <img src="images/catecories/navbar_categories/vertical_icon_5.png"
-                                                        alt="" class="navbar__pic">
-                                                    <span class="navbar__title">Fashion & Clothing</span>
-                                                    <i class="fa fa-angle-down"></i>
+                                                    <div class="navbar__pictitle">
+                                                        <img src="images/catecories/navbar_categories/vertical_icon_7.png"
+                                                            alt="" class="navbar__pic">
+                                                        <span class="navbar__title">Gifts, Parties & Holiday</span>
+                                                    </div>
                                                 </a>
                                             </li>
 
                                             <li class="navbar__item">
                                                 <a href="#" class="navbar__link">
-                                                    <img src="images/catecories/navbar_categories/vertical_icon_6.png"
-                                                        alt="" class="navbar__pic">
-                                                    <span class="navbar__title">Fashion & Clothing</span>
-                                                    <i class="fa fa-angle-down"></i>
-                                                </a>
-                                            </li>
-
-                                            <li class="navbar__item">
-                                                <a href="#" class="navbar__link">
-                                                    <img src="images/catecories/navbar_categories/vertical_icon_7.png"
-                                                        alt="" class="navbar__pic">
-                                                    <span class="navbar__title">Fashion & Clothing</span>
-                                                    <i class="fa fa-angle-down"></i>
-                                                </a>
-                                            </li>
-
-                                            <li class="navbar__item">
-                                                <a href="#" class="navbar__link">
-                                                    <img src="images/catecories/navbar_categories/vertical_icon_8.png"
-                                                        alt="" class="navbar__pic">
-                                                    <span class="navbar__title">Fashion & Clothing</span>
-                                                    <i class="fa fa-angle-down"></i>
+                                                    <div class="navbar__pictitle">
+                                                        <img src="images/catecories/navbar_categories/vertical_icon_8.png"
+                                                            alt="" class="navbar__pic">
+                                                        <span class="navbar__title">Beauty & Health</span>
+                                                    </div>
                                                 </a>
                                             </li>
 
