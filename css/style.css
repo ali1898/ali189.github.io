@@ -86,8 +86,8 @@ body {
   background-color: var(--color-DB3C30);
   color: var(--color-F5F5F5);
   padding: 0.5rem 1rem;
+  text-transform: uppercase;
   display: flex;
-  /* justify-content: space-between; */
   align-items: center;
   gap: 4px;
 }
@@ -140,7 +140,9 @@ body {
 }
 .menu__link {
   text-decoration: none;
+  text-transform: uppercase;
   color: var(--color-F5F5F5);
+  font-weight: 100;
 }
 .menu__link:hover {
   color: var(--color-201215);
