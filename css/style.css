@@ -336,6 +336,7 @@ body {
   padding: 10px;
 }
 .navbar__title {
+  color: var(--color-222222);
 }
 .navbar-dropdown-menu {
   background-color: var(--color-FFFFFF);
@@ -374,6 +375,7 @@ body {
 }
 .navbar-dropdown-menu__link {
   text-decoration: none;
+  color: var(--color-222222);
 }
 .navbar-dropdown-menu__link:hover {
   color: var(--color-DB3C30);
