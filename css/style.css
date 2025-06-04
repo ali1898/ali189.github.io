@@ -530,6 +530,7 @@ body {
   padding: 1rem;
   white-space: nowrap;
   box-shadow: 1px 1px 3px -2px var(--color-747474);
+  background-color: var(--color-FFFFFF);
 }
 .menu-nav-dorpdown__item {
   padding: 10px;
@@ -561,6 +562,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 2rem 1rem;
+  background-color: var(--color-FFFFFF);
 }
 /* .left__dropdown {
 } */
@@ -609,6 +611,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 2rem 1rem;
+  background-color: var(--color-FFFFFF);
 }
 .menu-dropdown3 {
   box-shadow: 1px 5px 16px -10px var(--color-747474);
@@ -620,6 +623,7 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   padding: 2rem 1rem;
+  background-color: var(--color-FFFFFF);
 }
 
 /* -------------------------Start Theme Features------------------------- */
@@ -776,4 +780,72 @@ body {
 }
 .footer-right_link:hover {
   color: var(--color-747474);
+}
+
+/* -------------------------Footer Container---------------------- */
+.footer-container {
+}
+.footertop {
+  background: var(--color-222222);
+  padding: 15px 0;
+  height: 72px;
+}
+.footer-top-wrap {
+  width: 1200px;
+  height: 42px;
+  margin: 0 auto;
+}
+.footer-row-bottom {
+  width: 1200px;
+  height: 42px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-row-left {
+}
+.footer-block {
+}
+.footer-block_form {
+}
+.footer-block_sub {
+}
+.footer-block_input {
+}
+.footer_block_btn {
+}
+
+/* footer row right */
+.footer-row-right {
+}
+.social-block {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+}
+.social-block_title {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: white;
+  padding: 3px 10px 0;
+}
+.block-content {
+  display: inline-block;
+  vertical-align: middle;
+}
+.block-content_items {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  gap: 5px;
+  font-size: 18px;
+}
+.social {
+}
+.social__link {
+  color: white;
+  border: 1px solid;
+  padding: 5px;
 }
