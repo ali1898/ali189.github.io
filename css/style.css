@@ -36,6 +36,7 @@
 }
 :root {
   --transition: all 300ms ease-in 80ms;
+  --color-RGBA03: rgba(255, 255, 255, 0.3);
   --color-DB3C30: #db3c30;
   --color-F44336: #f44336;
   --color-FFFFFF: #ffffff;
@@ -45,7 +46,13 @@
   --color-222222: #222222;
   --color-747474: #747474;
   --color-e6e6e6: #e6e6e6;
-  --color-RGBA03: rgba(255, 255, 255, 0.3);
+  --color-3A5898-facebook: #3a5898;
+  --color-00ACEE-twitter: #00acee;
+  --color-3F729B-instagram: #3f729b;
+  --color-C72527-pintrest: #c72527;
+  --color-0EBA9E-rss: #0eba9e;
+  --color-CE3527-youtube: #ce3527;
+  --color-DE6463-google-plus: #de6463;
 }
 
 *,
@@ -60,8 +67,8 @@ body {
   font-family: Poppins;
 }
 .fa {
-  -webkit-text-stroke: -1px white;
-  padding-right: 10px;
+  --webkit-text-stroke: -1px white;
+  padding: 0 5px;
 }
 
 /* -------------------Top Bar----------------- */
@@ -75,7 +82,7 @@ body {
 .nav {
 } */
 .container {
-  position: relative;
+  /* position: relative; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -190,7 +197,9 @@ body {
 .search-block-top {
 } */
 .search-block-top__form {
-  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
   background-color: var(--color-FFFFFF);
 }
@@ -199,7 +208,7 @@ body {
   background: var(--color-FFFFFF);
   height: 40px;
   line-height: 40px;
-  padding: 1rem;
+  padding: 0 1rem;
   border: 0;
   outline: none;
 }
@@ -207,8 +216,6 @@ body {
   font-size: 12px;
 }
 .search-block-top__btn {
-  position: absolute;
-  right: 0;
   color: var(--color-FFFFFF);
   height: 40px;
   background-color: var(--color-000000);
@@ -809,42 +816,40 @@ body {
 /* .footer-block {
 } */
 .footer-block_form {
-  position: relative;
-  width: 100%;
   height: 42px;
   background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer-block_sub {
-  position: absolute;
-  left: 0;
   color: black;
   width: 100px;
   height: 42px;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 1rem;
+  text-transform: uppercase;
 }
 .footer-block_input {
-  position: absolute;
-  left: 100px;
-  width: 85%;
+  width: 100%;
   height: 100%;
   padding: 0 1rem;
-  font-family: "poppins";
   color: black;
   outline: none;
   border: none;
   border-left: 1px solid;
 }
+.input::placeholder {
+  color: var(--color-747474);
+}
 .footer_block_btn {
-  line-height: 40px;
-  top: 0;
-  right: 0;
-  padding: 0;
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 50px;
   height: 42px;
-  text-align: center;
   background-color: var(--color-DB3C30);
   color: var(--color-FFFFFF);
   border: none;
@@ -859,11 +864,13 @@ body {
   justify-content: flex-end;
   align-items: center;
   gap: 6px;
+  height: 42px;
 }
 .social-block_title {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   vertical-align: middle;
-  font-size: 14px;
   color: var(--color-e6e6e6);
   padding: 3px 10px 0;
   text-transform: uppercase;
@@ -871,8 +878,10 @@ body {
   font-weight: 400;
 }
 .block-content {
-  display: inline-block;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 42px;
 }
 .block-content_items {
   display: flex;
@@ -880,11 +889,39 @@ body {
   list-style-type: none;
   gap: 5px;
   font-size: 18px;
+  height: 42px;
 }
-/* .social {
-} */
+.social {
+  height: 42px;
+  width: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .social__link {
   color: var(--color-FFFFFF);
   border: 1px solid var(--color-747474);
   padding: 5px;
+  font-size: 20px;
+}
+.facebook:hover {
+  background-color: var(--color-3A5898-facebook);
+}
+.twitter:hover {
+  background-color: var(--color-00ACEE-twitter);
+}
+.instagram:hover {
+  background-color: var(--color-3F729B-instagram);
+}
+.pinterest:hover {
+  background-color: var(--color-C72527-pintrest);
+}
+.rss:hover {
+  background-color: var(--color-0EBA9E-rss);
+}
+.youtube:hover {
+  background-color: var(--color-CE3527-youtube);
+}
+.google-plus:hover {
+  background-color: var(--color-DE6463-google-plus);
 }
