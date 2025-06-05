@@ -1052,3 +1052,42 @@ body {
   line-height: 1.5rem;
   color: var(--color-747474);
 }
+/* -----------------------------footer nav--------------------------- */
+.footer-nav {
+  height: 95px;
+  padding: 2rem 0;
+}
+.navRow {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.powered {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.powered__copyright {
+  font-size: 14px;
+  font-weight: 100;
+  color: var(--color-747474);
+}
+/* .powered__item {
+} */
+.powered__link {
+  text-decoration: none;
+  color: var(--color-000000);
+  font-weight: 100;
+  font-size: 14px;
+}
+.paymentFooter {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.paymentFooter__img {
+  width: 30rem;
+}
