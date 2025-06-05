@@ -313,6 +313,8 @@ body {
   visibility: hidden;
   opacity: 0;
   width: 100%;
+  left: 0;
+  top: 40px;
   background-color: var(--color-FFFFFF);
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.1);
   transition: var(--transition);

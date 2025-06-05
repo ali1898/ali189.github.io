@@ -1,0 +1,117 @@
+:root {
+  --transition: all 300ms ease-in 80ms;
+  --color-DB3C30: #db3c30;
+  --color-FFFFFF: #ffffff;
+  --color-db3c30: #db3c30;
+  --color-ff9800: #ff9800;
+  --color-535353: #535353;
+  --color-000000: #000000;
+  --color-747474: #74747442;
+  --color-e6e6e6: #e6e6e6;
+  --color-66afe9: #66afe9;
+}
+
+.register-page {
+  max-width: 1200px;
+  max-height: 713px;
+  height: 713px;
+  margin: 0 auto;
+}
+.row {
+  height: 100%;
+  width: 100%;
+}
+.register-box {
+  max-width: 1170px;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.register-box__title {
+  text-transform: uppercase;
+  font-family: "poppins";
+  font-weight: 400;
+  background: transparent;
+  color: var(--color-000000);
+  line-height: 40px;
+}
+.registerForm {
+  position: relative;
+  max-width: 600px;
+  width: 600px;
+  height: 70%;
+  border: 1px solid var(--color-e6e6e6);
+  padding: 0 20px 30px;
+  display: flex;
+  flex-direction: column;
+}
+.registerForm__title {
+  text-align: center;
+  font-family: "poppins";
+  font-size: 16px;
+  background: transparent;
+  font-weight: 400;
+  color: var(--color-000000);
+  margin: 20px 0;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.registerForm__title::before {
+  position: absolute;
+  content: "";
+  background-color: var(--color-db3c30);
+  width: 500px;
+  height: 4px;
+  top: 0;
+  left: 50px;
+}
+.registerForm__lable {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin: 8px 0;
+}
+.registerForm__input {
+  height: 35px;
+  padding: 12px;
+  font-size: 12px;
+  line-height: 1.43;
+  color: var(--color-535353);
+  background-color: var(--color-FFFFFF);
+  background-image: none;
+  transition: all 250ms ease-in-out;
+  border: 1px solid var(--color-747474);
+  transition: var(--transition);
+}
+.registerForm__input:focus {
+  border-color: var(--color-66afe9);
+  outline: none;
+}
+.registerForm__btn {
+  margin: 1rem 0;
+  width: 200px;
+  padding: 14px 1rem;
+  color: var(--color-FFFFFF);
+  background-color: var(--color-ff9800);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+}
+.registerForm__btn:hover {
+  background-color: var(--color-FFFFFF);
+  border: 1px solid var(--color-ff9800);
+  color: var(--color-ff9800);
+}
+.registerForm__item {
+}
+.registerForm__link {
+  text-decoration: none;
+  color: var(--color-000000);
+  font-size: 14px;
+  font-weight: 300;
+}
+.registerForm__link:hover {
+  color: var(--color-747474);
+}
