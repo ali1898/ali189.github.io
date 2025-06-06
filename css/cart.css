@@ -1,0 +1,54 @@
+:root {
+  --transition: all 300ms ease-in 80ms;
+  --color-000000: #000000;
+  --color-FFFFFF: #ffffff;
+  --color-fcf8e3: #fcf8e3;
+  --color-faebcc: #faebcc;
+  --color-8a6d3b: #8a6d3b;
+  --color-535353: #535353;
+  --color-222222: #222222;
+}
+
+.cart {
+  height: 260px;
+}
+.cartRow {
+  width: 100%;
+  height: 100%;
+}
+.cartPage {
+  margin-top: 30px;
+  background-color: var(--color-FFFFFF);
+  padding: 30px;
+}
+.cartPage__title {
+  line-height: 50px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 2rem;
+  color: var(--color-222222);
+}
+.cartPage__text {
+  color: var(--color-8a6d3b);
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 1rem;
+  border: 1px solid var(--color-faebcc);
+  background-color: var(--color-fcf8e3);
+  padding: 15px;
+}
+.cartPage__continue {
+  display: block;
+  text-align: center;
+  color: var(--color-000000);
+}
+.cartPage__link {
+  text-decoration: none;
+  color: var(--color-000000);
+}
+.cartPage__link:hover {
+  color: var(--color-535353);
+}

@@ -138,6 +138,7 @@
 .registerBox__par {
 }
 .registerBox__btn {
+  text-decoration: none;
   margin: 1rem 0;
   width: 170px;
   padding: 14px 1rem;
