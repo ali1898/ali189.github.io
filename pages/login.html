@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 </head>
 
@@ -94,10 +95,10 @@
                                     <a href="#" class="menu__link">check out</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="../pages/login.html" class="menu__link">login</a>
+                                    <a href="login.html" class="menu__link">login</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="../pages/register.html" class="menu__link">register</a>
+                                    <a href="register.html" class="menu__link">register</a>
                                 </li>
                             </ul>
                         </nav>
@@ -837,7 +838,47 @@
     </header>
     <!-- Main -->
     <main class="main">
-
+        <!-- login account box -->
+        <div class="loginPage">
+            <div class="row">
+                <div class="loginBox">
+                    <form method="" action="" class="loginForm">
+                        <h2 class="loginBox__title">Login</h2>
+                        <div class="line"></div>
+                        <label for="email" class="loginForm__lable">Email Address</label>
+                        <input type="email" id="email" class="loginForm__input" placeholder=" Email">
+                        <label for="password" class="loginForm__lable">Password</label>
+                        <input type="password" id="password" class="loginForm__input" placeholder="Password">
+                        <div class="loginForm__item">
+                            <a href="/" class="loginForm__link">
+                                Forget your password?
+                            </a>
+                        </div>
+                        <button type="submit" class="loginForm__btn">
+                            <i class="fa fa-lock"></i>
+                            Sign in
+                        </button>
+                    </form>
+                </div>
+                <!-- create account box -->
+                <div class="rightBox">
+                    <div class="registerBox">
+                        <h3 class="loginBox__title">Create Account</h3>
+                        <div class="line"></div>
+                        <div class="registerBox__item">
+                            <p class="registerBox__par">
+                                By creating an account on our website you will be able to shop faster, be up to date on
+                                an orders status, and keep track of the orders you have previously made.
+                            </p>
+                        </div>
+                        <button type="submit" class="registerBox__btn">
+                            <i class="fa fa-user"></i>
+                            Creat an account
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <!-- Footer -->
     <footer class="footer">
