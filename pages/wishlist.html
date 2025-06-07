@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/wishlist.css">
     <link rel="shortcut icon" href="../images/favicon.png" type="image/x-icon">
 </head>
 
@@ -838,47 +838,43 @@
     </header>
     <!-- Main -->
     <main class="main">
-        <!-- login account box -->
-        <div class="loginPage">
-            <div class="row">
-                <div class="loginBox">
-                    <form method="" action="" class="loginForm">
-                        <h2 class="loginBox__title">Login</h2>
-                        <div class="line"></div>
-                        <label for="email" class="loginForm__lable">Email Address</label>
-                        <input type="email" id="email" class="loginForm__input" placeholder=" Email">
-                        <label for="password" class="loginForm__lable">Password</label>
-                        <input type="password" id="password" class="loginForm__input" placeholder="Password">
-                        <div class="loginForm__item">
-                            <a href="/" class="loginForm__link">
-                                Forget your password?
+
+        <section class="breadcrumbs">
+            <div class="container">
+                <nav class="navigation">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb_item">
+                            <a href="../index.html" class="breadcrumb__link">
+                                <i class="fa fa-home"></i>
+                                Home
                             </a>
-                        </div>
-                        <button type="submit" class="loginForm__btn">
-                            <i class="fa fa-lock"></i>
-                            Sign in
-                        </button>
-                    </form>
-                </div>
-                <!-- create account box -->
-                <div class="rightBox">
-                    <div class="registerBox">
-                        <h3 class="loginBox__title">Create Account</h3>
-                        <div class="line"></div>
-                        <div class="registerBox__item">
-                            <p class="registerBox__par">
-                                By creating an account on our website you will be able to shop faster, be up to date on
-                                an orders status, and keep track of the orders you have previously made.
-                            </p>
-                        </div>
-                        <a href="/pages/register.html" type="submit" class="registerBox__btn">
-                            <i class="fa fa-user"></i>
-                            Create an account
-                        </a>
+                        </li>
+                        <li class="breadcrumb_item">
+                            <span class="breadcrumb__link">
+                                <i class="fa fa-angle-right"></i>
+                                Wishlist
+                            </span>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="cart">
+            <div class="container">
+                <div class="wishlistRow">
+                    <div class="wishlistPage">
+                        <h2 class="wishlistPage__title">Wishlist</h2>
+                        <span class="wishlistPage__continue">
+                            To create a wish list you must
+                            <a href="login.html" class="wishlistPage__link">Sign in</a>
+                            or
+                            <a href="register.html" class="wishlistPage__link">Create an account</a>
+                        </span>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
     <!-- Footer -->
     <footer class="footer">

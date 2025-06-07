@@ -25,6 +25,11 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Linking Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Linking Google Fonts for Icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,200,0,0" />
 </head>
 
 <body>
@@ -85,10 +90,10 @@
                         <nav class="nav">
                             <ul class="menu">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">my account</a>
+                                    <a href="pages/login.html" class="menu__link">my account</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">wishlist</a>
+                                    <a href="pages/wishlist.html" class="menu__link">wishlist</a>
                                 </li>
                                 <li class="menu__item">
                                     <a href="pages/cart.html" class="menu__link">check out</a>
@@ -772,7 +777,7 @@
                                         <div class="menu-dropdown_hover">
                                             <a href="#" class="menu-nav-dropdown__link">
                                                 Shortcode
-                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-right"></i>
                                             </a>
                                             <div class="menu__list">
                                                 <ul class="menu-dropdown__items">
@@ -803,7 +808,7 @@
                                         <div class="menu-dropdown_hover">
                                             <a href="#" class="menu-nav-dropdown__link">
                                                 Header-options
-                                                <i class="fa fa-angle-down"></i>
+                                                <i class="fa fa-angle-right"></i>
                                             </a>
                                             <div class="menu__list">
                                                 <ul class="menu-dropdown__items">
@@ -836,58 +841,48 @@
     <!-- Main -->
     <main class="main">
         <!-- start slide show -->
-        <section class="slideshow">
-            <div class="slider-container">
-                <div class="slider">
-                    <!-- images -->
-                    <a href="#" class="slide active">
-                        <img src="images/slideshow/slideshow_image_1_2x.png" alt="slideshow_image_1_2x"
-                            class="slider__img">
-                        <!-- slide caption1 -->
-                        <!-- <div class="caption-fullwidth caption_1">
-                            <div class="slide-caption">
-                                <div class="slide-caption_textfirst">Introducing</div>
-                                <h3 class="slide-caption_title">autumn collection 2015</h3>
-                                <p class="slide-caption_text">Bibdum auctor, nisi elit consequat ipsum, nec sagittis sem
-                                    nibh id elit</p>
-                                <a href="#" class="slide-caption_link" title="View Collections">View Collections</a>
-                            </div>
-                        </div> -->
-                    </a>
-                    <a href="#" class="slide">
-                        <img src="images/slideshow/slideshow_image_2_2x.png" alt="slideshow_image_2_2x"
-                            class="slider__img">
-                        <!-- slide caption2 -->
-                        <!-- <div class="caption-fullwidth caption_2">
-                            <div class="slide-caption">
-                                <div class="slide-caption_textfirst">Introducing</div>
-                                <h3 class="slide-caption_title">autumn collection 2015</h3>
-                                <p class="slide-caption_text">Bibdum auctor, nisi elit consequat ipsum, nec sagittis sem
-                                    nibh id elit</p>
-                                <a href="#" class="slide-caption_link" title="View Collections">View Collections</a>
-                            </div>
-                        </div> -->
-                    </a>
-                    <a href="#" class="slide">
-                        <img src="images/slideshow/slideshow_image_3_2x.png" alt="slideshow_image_3_2x"
-                            class="slider__img">
-                        <!-- slide caption3 -->
-                        <!-- <div class="caption-fullwidth caption_3">
-                            <div class="slide-caption">
-                                <div class="slide-caption_textfirst">Introducing</div>
-                                <h3 class="slide-caption_title">autumn collection 2015</h3>
-                                <p class="slide-caption_text">Bibdum auctor, nisi elit consequat ipsum, nec sagittis sem
-                                    nibh id elit</p>
-                                <a href="#" class="slide-caption_link" title="View Collections">View Collections</a>
-                            </div>
-                        </div> -->
-                    </a>
-                    <!-- nivo directionNav -->
-                    <a href="#" class="prev">&#10094</a>
-                    <a href="#" class="next">&#10095</a>
+        <div class="slider-container">
+            <!-- Slider List Items -->
+            <div class="slider-wrapper swiper-wrapper">
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <div class="slide-subtitle">Introducing</div>
+                        <h3 class="slide-title">AUTUMN COLLECTION 2015</h3>
+                        <p class="slide-description">Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                            lorem quis</p>
+                        <a href="#" class="slide-button"><span>View Collections</span></a>
+                    </div>
+                </div>
+
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <div class="slide-subtitle">Introducing</div>
+                        <h3 class="slide-title">AUTUMN COLLECTION 2015</h3>
+                        <p class="slide-description">Bibdum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id
+                            elit</p>
+                        <a href="#" class="slide-button"><span>View Collections</span></a>
+                    </div>
+                </div>
+
+                <div class="slider-item swiper-slide">
+                    <div class="slide-content">
+                        <div class="slide-subtitle">Introducing</div>
+                        <h3 class="slide-title">on FRIDAY <br> SALE off UP 50%</h3>
+                        <p class="slide-description">Duis sed odio sit amet nibh vulputate cursus a sit amet mauris</p>
+                        <a href="#" class="slide-button"><span>Shop Now</span></a>
+                    </div>
                 </div>
             </div>
-        </section>
+            <!-- Slider Navigations (Prev/Next) -->
+            <div class="slider-navigations">
+                <button id="slide-prev" class="material-symbols-rounded">
+                    chevron_left
+                </button>
+                <button id="slide-next" class="material-symbols-rounded">
+                    chevron_right
+                </button>
+            </div>
+        </div>
         <!-- End Slide Show -->
     </main>
     <!-- Footer -->
@@ -1175,6 +1170,9 @@
             </section>
         </div>
     </footer>
+    <!-- Linking Swiper Script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Linking Custom Script -->
     <script src="js/script.js"></script>
 </body>
 
