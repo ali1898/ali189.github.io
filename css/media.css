@@ -1,0 +1,37 @@
+:root {
+  --transition: all 300ms ease-in 80ms;
+  --color-RGBA03: rgba(255, 255, 255, 0.3);
+  --color-DB3C30: #db3c30;
+  --color-F44336: #f44336;
+  --color-FFFFFF: #ffffff;
+  --color-F5F5F5: #f5f5f5;
+  --color-201215: #201215;
+  --color-535353: #535353;
+  --color-000000: #000000;
+  --color-222222: #222222;
+  --color-747474: #747474;
+  --color-e6e6e6: #e6e6e6;
+  --color-3A5898-facebook: #3a5898;
+  --color-00ACEE-twitter: #00acee;
+  --color-3F729B-instagram: #3f729b;
+  --color-C72527-pintrest: #c72527;
+  --color-0EBA9E-rss: #0eba9e;
+  --color-CE3527-youtube: #ce3527;
+  --color-DE6463-google-plus: #de6463;
+}
+
+@media (max-width: 1024px) {
+  .slide-content > * {
+    max-width: 66%;
+  }
+  .slider-navigations button {
+    top: unset;
+    bottom: -15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slide-content > * {
+    max-width: 100%;
+  }
+}
