@@ -36,7 +36,7 @@
 }
 :root {
   --transition: all 300ms ease-in 80ms;
-  --color-RGBA03: rgba(255, 255, 255, 0.3);
+  --color-74747421: #74747421;
   --color-DB3C30: #db3c30;
   --color-F44336: #f44336;
   --color-FFFFFF: #ffffff;
@@ -879,36 +879,49 @@ body {
   height: 502px;
 }
 .columnsRow {
+  width: 100%;
+  height: 402px;
 }
 .centerColumn {
+  width: 100%;
+  height: 402px;
 }
 .centerWrap {
+  width: 100%;
+  height: 402px;
 }
 .firstRow {
-  display: flex;
+  width: 100%;
+  height: 402px;
 }
 .productsTop {
+  width: 100%;
+  height: 402px;
+  display: flex;
+  align-items: center;
+  /* overflow: auto; */
 }
 .productsTop__subheading {
   font-weight: 400;
   font-size: 20px;
   text-transform: uppercase;
   color: var(--color-F44336);
-  margin: 1rem 0;
+  margin-bottom: 1rem;
 }
 .contant {
   max-width: 293px;
   max-height: 403px;
-  padding: 10px;
-  display: flex;
-
+  padding: 10px 0;
 }
 .productCart {
+  height: 402px;
   position: relative;
+  cursor: pointer;
+  border: 1px solid var(--color-74747421);
 }
 .contant__img1 {
-  width: 100%;
-  height: 100%;
+  width: 262px;
+  height: 288px;
 }
 .content__items {
   display: flex;
@@ -922,6 +935,9 @@ body {
   font-weight: 400;
   line-height: 25px;
 }
+.content__link:hover {
+  color: var(--color-F44336);
+}
 .content__price {
   font-size: 14px;
   font-weight: 700;
@@ -929,16 +945,31 @@ body {
   margin-top: 1rem;
 }
 .content__img2 {
-  display: none;
+  width: 262px;
+  height: 288px;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
   width: 100%;
-  height: 100%;
+  transition: all 300ms ease-in-out;
+}
+.productCart:hover .content__img2 {
+  visibility: visible;
+  opacity: 1;
 }
 .functional-buttons {
-  /* width: 100%;
-  background-color: var(--color-FFFFFF);
+  width: 100%;
   position: absolute;
-  bottom: 0;
-  opacity: 1; */
+  visibility: hidden;
+  opacity: 0;
+  padding: 0 10px;
+  background-color: var(--color-FFFFFF);
+  transition: var(--transition);
+}
+.productCart:hover .functional-buttons {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(-70px);
 }
 .functionalButtons {
   display: flex;
@@ -952,12 +983,15 @@ body {
 }
 .cart {
   padding: 10px;
-  background-color: var(--color-535353);
+  background-color: var(--color-747474);
 }
 .cart__form {
 }
 .cart__btn {
   color: var(--color-FFFFFF);
+}
+.cart__btn:hover {
+  color: #e48100;
 }
 .second {
   display: flex;
