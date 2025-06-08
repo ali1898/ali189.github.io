@@ -8,3 +8,12 @@ const swiper = new Swiper(".slider-container", {
     nextEl: "#slide-next",
   },
 });
+
+const swiper2 = new Swiper(".wrapper", {
+  loop: true,
+
+  navigation: {
+    nextEl: ".centerWrap__arrowleft",
+    prevEl: ".centerWrap__arrowright",
+  },
+});
