@@ -17,3 +17,12 @@ const swiper2 = new Swiper(".wrapper", {
     prevEl: ".centerWrap__arrowright",
   },
 });
+
+const swiper3 = new Swiper(".wrapperN", {
+  loop: true,
+
+  navigation: {
+    nextEl: ".centerWrap__arrowleftN",
+    prevEl: ".centerWrap__arrowrightN",
+  },
+});

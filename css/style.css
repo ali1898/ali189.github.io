@@ -877,11 +877,33 @@ body {
 
 .columnsContainer {
   width: 100%;
-  height: 502px;
+  height: 5612px;
+  background-color: var(--color-F5F5F5);
+}
+.mainContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 .columnsRow {
   width: 100%;
-  height: 402px;
+  height: 502px;
+  margin-top: 2rem;
+  box-shadow: 0 0 14px -11px;
+  background-color: var(--color-FFFFFF);
+}
+.columnsRow::before {
+  content: "";
+  position: absolute;
+  width: 1373px;
+  height: 7px;
+  top: 29px;
+  left: 0;
+  background-color: var(--color-F44336);
 }
 .centerColumn {
   width: 100%;
@@ -895,7 +917,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1rem 0;
+  margin: 1rem 1rem;
 }
 .firstRow {
   width: 100%;
@@ -1015,8 +1037,8 @@ body {
   padding: 10px;
   background-color: var(--color-747474);
 }
-.cart__form {
-}
+/* .cart__form {
+} */
 .cart__btn {
   color: var(--color-FFFFFF);
 }
@@ -1038,7 +1060,53 @@ body {
   text-transform: uppercase;
 }
 /* --------------------End card slider----------------------- */
-
+.centerWrapN {
+  display: flex;
+  justify-content: flex-end;
+}
+.firstRowN {
+  width: 1030px;
+  height: 402px;
+  overflow: hidden;
+}
+.contantN {
+  max-width: 257px;
+  max-height: 403px;
+  padding: 10px 0;
+}
+.columnsRowN {
+  width: 100%;
+  height: 502px;
+  margin-top: 2rem;
+  box-shadow: 0 0 14px -11px;
+  background-color: var(--color-FFFFFF);
+}
+.arrowsN {
+  position: absolute;
+  font-size: 10px;
+}
+.centerWrap__arrowleftN {
+  position: absolute;
+  left: 0;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--color-747474);
+  display: flex;
+  padding: 1rem;
+}
+.centerWrap__arrowrightN {
+  position: absolute;
+  left: 980px;
+  cursor: pointer;
+  border: 1px solid;
+  border-radius: 100%;
+  background-color: white;
+  color: var(--color-747474);
+  display: flex;
+  padding: 1rem;
+}
 /* ----------------------------------footer----------------------------- */
 
 /* ------------------apollo-container------------------ */
