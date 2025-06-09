@@ -974,6 +974,7 @@ body {
 .contant__img1 {
   width: 262px;
   height: 288px;
+  padding: 10px;
 }
 .content__items {
   display: flex;
@@ -1003,6 +1004,7 @@ body {
   top: 0;
   visibility: hidden;
   width: 100%;
+  padding: 10px;
 }
 .productCart:hover .content__img2 {
   visibility: visible;
@@ -1060,26 +1062,32 @@ body {
   text-transform: uppercase;
 }
 /* --------------------End card slider----------------------- */
+.columnsRowN {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 673px;
+  margin-top: 2rem;
+  box-shadow: 0 0 14px -11px;
+  background-color: var(--color-FFFFFF);
+}
+.centerColumnN {
+  width: 71%;
+  height: 100%;
+}
 .centerWrapN {
   display: flex;
   justify-content: flex-end;
 }
 .firstRowN {
-  width: 1030px;
+  width: 970px;
   height: 402px;
   overflow: hidden;
 }
 .contantN {
-  max-width: 257px;
+  max-width: 244px;
   max-height: 403px;
   padding: 10px 0;
-}
-.columnsRowN {
-  width: 100%;
-  height: 502px;
-  margin-top: 2rem;
-  box-shadow: 0 0 14px -11px;
-  background-color: var(--color-FFFFFF);
 }
 .arrowsN {
   position: absolute;
@@ -1098,7 +1106,7 @@ body {
 }
 .centerWrap__arrowrightN {
   position: absolute;
-  left: 980px;
+  left: 920px;
   cursor: pointer;
   border: 1px solid;
   border-radius: 100%;
@@ -1106,6 +1114,28 @@ body {
   color: var(--color-747474);
   display: flex;
   padding: 1rem;
+}
+
+/* -------------------banner----------------- */
+.bannerGolMart {
+  height: 260px;
+  margin-top: 10px;
+}
+.bannerRow {
+  display: flex;
+  align-items: center;
+}
+.banner__link {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+.banner__img {
+  width: 100%;
+}
+.banner__img:hover {
+  opacity: 0.7;
+  transition: var(--transition);
 }
 /* ----------------------------------footer----------------------------- */
 
