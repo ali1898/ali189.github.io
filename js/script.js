@@ -1,16 +1,33 @@
 // Panel Tool
 const panelbuttonEl = document.querySelector(".panelbutton");
 const paneltoolcontrolEl = document.querySelector(".paneltoolcontrol");
-let flag = true;
-panelbuttonEl.addEventListener("click", () => {
-  if (flag) {
+const layoutcontrol__updateEl = document.querySelector(
+  ".layoutcontrol__update"
+);
+let isActive = true;
+const activePanelTool = () => {
+  if (isActive) {
     paneltoolcontrolEl.classList.add("paneltoolcontrol--active");
-    console.log("Flag is true");
-    flag = false;
+    isActive = false;
+    console.log("yes");
   } else {
     paneltoolcontrolEl.classList.remove("paneltoolcontrol--active");
-    console.log("Flag is false");
-    flag = true;
+    isActive = true;
+    console.log("no");
+  }
+};
+panelbuttonEl.addEventListener("click", activePanelTool);
+
+let selected = true;
+layoutcontrol__updateEl.addEventListener("click", () => {
+  if (selected) {
+    layoutcontrol__updateEl.classList.remove("layoutcontrol__update--active");
+    selected = false;
+    console.log("active", selected);
+  } else {
+    layoutcontrol__updateEl.classList.add("layoutcontrol__update--active");
+    selected = true;
+    console.log("deactive");
   }
 });
 

@@ -699,14 +699,16 @@ body {
 .paneltool {
   position: fixed;
   right: 0;
-  top: 20%;
+  top: 45%;
   z-index: 1000;
 }
 .paneltoolcontrol {
   transform: translateX(340px);
+  transition: var(--transition);
 }
 .paneltoolcontrol--active {
   transform: translateX(0);
+  transition: var(--transition);
 }
 .panelbutton {
   background: var(--color-FFFFFF);
@@ -780,13 +782,19 @@ body {
 .onoffswitch-inner {
 }
 .onoffswitch-switch {
-}
-.layoutcontrol {
 } */
+.layoutcontrol {
+  cursor: pointer;
+}
 .layoutcontrol__update {
   font-size: 14px;
   font-weight: 300;
   padding: 0 1rem;
+  color: var(--color-747474);
+}
+.layoutcontrol__update--active {
+  color: var(--color-000000);
+  font-weight: 700;
 }
 
 /* --------------------Start Slide Show----------------------- */
