@@ -702,8 +702,12 @@ body {
   top: 20%;
   z-index: 1000;
 }
-/* .paneltoolcontrol {
-} */
+.paneltoolcontrol {
+  transform: translateX(340px);
+}
+.paneltoolcontrol--active {
+  transform: translateX(0);
+}
 .panelbutton {
   background: var(--color-FFFFFF);
   width: 40px;
@@ -714,7 +718,7 @@ body {
   border: 1px solid var(--color-74747421);
   box-shadow: 5px 0px 10px -3px var(--color-000000);
   position: absolute;
-  top: 2.5rem;
+  top: 0.8rem;
   left: -35px;
   cursor: pointer;
 }
@@ -726,8 +730,8 @@ body {
   padding: 1rem;
   border: 1px solid var(--color-74747421);
   box-shadow: 5px 0px 10px -3px var(--color-000000);
-  width: 320px;
-  height: 320px;
+  width: 340px;
+  height: 290px;
 }
 /* .panelinner {
 } */
