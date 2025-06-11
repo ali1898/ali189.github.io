@@ -1252,15 +1252,26 @@ body {
   width: 10px;
   height: 520px;
   background: black;
-  /* opacity: 0; */
 }
-/* .fixedPanelSidebar--active {
-  opacity: 1;
-} */
-.fixedPanel {
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateY(-1300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+.fixedPanelSidebar {
+  animation: appear linear;
+  animation-delay: 1s;
+  animation-timeline: view();
+}
+/* .fixedPanel {
 }
 .fixedPanelItems {
-}
+} */
 .fixedPanelItems__item {
   width: max-content;
   height: 87px;
