@@ -54,6 +54,14 @@
   --color-0EBA9E-rss: #0eba9e;
   --color-CE3527-youtube: #ce3527;
   --color-DE6463-google-plus: #de6463;
+
+  --color-3F51B5blue: #3f51b5;
+  --color-03A9F5lightBlue: #03a9f5;
+  --color-8CC34Bgreen: #8cc34b;
+  --color-FFE035yellow: #ffe035;
+  --color-FF9801orange: #ff9801;
+  --color-7A564Abrown: #7a564a;
+  --color-00968Askyblue: #00968a;
 }
 
 *,
@@ -699,7 +707,7 @@ body {
 .paneltool {
   position: fixed;
   right: 0;
-  top: 45%;
+  top: 30%;
   z-index: 1000;
 }
 .paneltoolcontrol {
@@ -1099,10 +1107,12 @@ body {
   visibility: hidden;
   width: 100%;
   padding: 10px;
+  transition: var(--transition);
 }
 .productCart:hover .content__img2 {
   visibility: visible;
   opacity: 1;
+  transform: rotateY(360deg);
 }
 .functional-buttons {
   width: 100%;
@@ -1131,7 +1141,7 @@ body {
 }
 .cart {
   padding: 10px;
-  /* background-color: var(--color-747474); */
+  background-color: var(--color-747474);
 }
 /* .cart__form {
 } */
@@ -1253,6 +1263,27 @@ body {
   height: 6px;
   background-color: var(--color-F44336);
 }
+.leftColumnN.blue::before {
+  background-color: var(--color-3F51B5blue);
+}
+.leftColumnN.lightBlue::before {
+  background-color: var(--color-03A9F5lightBlue);
+}
+.leftColumnN.green::before {
+  background-color: var(--color-8CC34Bgreen);
+}
+.leftColumnN.yellow::before {
+  background-color: var(--color-FFE035yellow);
+}
+.leftColumnN.orange::before {
+  background-color: var(--color-FF9801orange);
+}
+.leftColumnN.brown::before {
+  background-color: var(--color-7A564Abrown);
+}
+.leftColumnN.skyBlue::before {
+  background-color: var(--color-00968Askyblue);
+}
 .topColumnN {
   width: 100%;
   margin: 10px 0;
@@ -1262,6 +1293,27 @@ body {
   font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
+}
+.topColumnN__title.blue {
+  color: var(--color-3F51B5blue);
+}
+.topColumnN__title.lightBlue {
+  color: var(--color-03A9F5lightBlue);
+}
+.topColumnN__title.green {
+  color: var(--color-8CC34Bgreen);
+}
+.topColumnN__title.yellow {
+  color: var(--color-FFE035yellow);
+}
+.topColumnN__title.orange {
+  color: var(--color-FF9801orange);
+}
+.topColumnN__title.brown {
+  color: var(--color-7A564Abrown);
+}
+.topColumnN__title.skyBlue {
+  color: var(--color-00968Askyblue);
 }
 .leftColumnNItems {
   width: 100%;
