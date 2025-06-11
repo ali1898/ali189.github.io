@@ -1252,7 +1252,11 @@ body {
   width: 10px;
   height: 520px;
   background: black;
+  /* opacity: 0; */
 }
+/* .fixedPanelSidebar--active {
+  opacity: 1;
+} */
 .fixedPanel {
 }
 .fixedPanelItems {
@@ -1260,39 +1264,73 @@ body {
 .fixedPanelItems__item {
   width: max-content;
   height: 87px;
-  background: beige;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: var(--transition);
+  opacity: 0;
 }
-.fixedPanelItems__item:nth-child(1) {
+.fixedPanelItems__item:nth-child(1):hover {
   background-color: var(--color-F44336);
+  position: relative;
+  left: -192px;
+  opacity: 1;
+  transform: translateX(190px);
 }
-.fixedPanelItems__item:nth-child(2) {
+.fixedPanelItems__item:nth-child(2):hover {
   background-color: var(--color-3F51B5blue);
+  position: relative;
+  left: -245px;
+  opacity: 1;
+  transform: translateX(240px);
 }
-.fixedPanelItems__item:nth-child(3) {
+.fixedPanelItems__item:nth-child(3):hover {
   background-color: var(--color-03A9F5lightBlue);
+  position: relative;
+  left: -170px;
+  opacity: 1;
+  transform: translateX(165px);
 }
-.fixedPanelItems__item:nth-child(4) {
+.fixedPanelItems__item:nth-child(4):hover {
   background-color: var(--color-8CC34Bgreen);
+  position: relative;
+  left: -223px;
+  opacity: 1;
+  transform: translateX(218px);
 }
-.fixedPanelItems__item:nth-child(5) {
+.fixedPanelItems__item:nth-child(5):hover {
   background-color: var(--color-FFE035yellow);
+  position: relative;
+  left: -178px;
+  opacity: 1;
+  transform: translateX(177px);
 }
-.fixedPanelItems__item:nth-child(6) {
+.fixedPanelItems__item:nth-child(6):hover {
   background-color: var(--color-FF9801orange);
+  position: relative;
+  left: -186px;
+  opacity: 1;
+  transform: translateX(185px);
 }
 .fixedPanelItems__Link {
   text-decoration: none;
 }
-.iconOne {
-}
+/* .iconOne {
+} */
 .fixedPanelItems__text {
   font-size: 18px;
   font-weight: 500;
   padding: 1rem;
   color: white;
+  white-space: nowrap;
+}
+.fixedPanelItems__text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -8px;
+  margin-top: -8px;
+  background-color: red;
 }
 /* -------------------------Left Column N---------------------- */
 .leftColumnN {

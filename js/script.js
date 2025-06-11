@@ -59,3 +59,27 @@ const swiper3 = new Swiper(".wrapperN", {
     prevEl: ".centerWrap__arrowrightN",
   },
 });
+
+// Fixed Panel Sidebar
+const fixedPanelSidebarEl = document.querySelectorAll(".columnsRowN");
+const fixedPanelItems__LinkEl = document.querySelectorAll(
+  ".fixedPanelItems__Link"
+);
+
+window.onscroll = () => {
+  fixedPanelSidebarEl.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
+
+    if (top >= offset && top < offset - height) {
+      navLinks.forEach((links) => {
+        links.classList.remove("active");
+        document
+          .querySelector(`.fixedPanelItems__Link[href*=` + id + `]`)
+          .classList.add("active");
+      });
+    }
+  });
+};
