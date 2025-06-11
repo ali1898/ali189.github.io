@@ -1243,6 +1243,57 @@ body {
   opacity: 0.7;
   transition: var(--transition);
 }
+/* ------------------Fixed Panel Sidebar---------------------- */
+.fixedPanelSidebar {
+  z-index: 1000;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 520px;
+  background: black;
+}
+.fixedPanel {
+}
+.fixedPanelItems {
+}
+.fixedPanelItems__item {
+  width: max-content;
+  height: 87px;
+  background: beige;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fixedPanelItems__item:nth-child(1) {
+  background-color: var(--color-F44336);
+}
+.fixedPanelItems__item:nth-child(2) {
+  background-color: var(--color-3F51B5blue);
+}
+.fixedPanelItems__item:nth-child(3) {
+  background-color: var(--color-03A9F5lightBlue);
+}
+.fixedPanelItems__item:nth-child(4) {
+  background-color: var(--color-8CC34Bgreen);
+}
+.fixedPanelItems__item:nth-child(5) {
+  background-color: var(--color-FFE035yellow);
+}
+.fixedPanelItems__item:nth-child(6) {
+  background-color: var(--color-FF9801orange);
+}
+.fixedPanelItems__Link {
+  text-decoration: none;
+}
+.iconOne {
+}
+.fixedPanelItems__text {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 1rem;
+  color: white;
+}
 /* -------------------------Left Column N---------------------- */
 .leftColumnN {
   position: relative;
