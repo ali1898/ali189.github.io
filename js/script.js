@@ -58,21 +58,20 @@ const swiper = new Swiper(".slider-container", {
 
 const swiper2 = new Swiper(".wrapper", {
   loop: true,
-
+  // autoplay: { delay: 4000 },
   navigation: {
     nextEl: ".centerWrap__arrowleft",
     prevEl: ".centerWrap__arrowright",
   },
 });
 
-const swiper3 = new Swiper(".wrapperN", {
-  loop: true,
-
-  navigation: {
-    nextEl: ".centerWrap__arrowleftN",
-    prevEl: ".centerWrap__arrowrightN",
-  },
-});
+// const swiper3 = new Swiper(".wrapperN", {
+//   loop: true,
+//   navigation: {
+//     nextEl: ".centerWrap__arrowleftN",
+//     prevEl: ".centerWrap__arrowrightN",
+//   },
+// });
 
 // Fixed Panel Sidebar
 const fixedPanelSidebarEl = document.querySelectorAll(".columnsRowN");
