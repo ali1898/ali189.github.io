@@ -1,3 +1,17 @@
+// Popup New Letter
+const popup__closeEl = document.querySelector(".popup__close");
+const popupNewLetterEl = document.querySelector(".popupNewLetter");
+const popupbgEl = document.querySelector(".popupbg");
+const popupForm__inputEl = document.querySelector(".popupForm__input");
+
+popup__closeEl.addEventListener("click", () => {
+  popupNewLetterEl.style.display = "none";
+  popupbgEl.style.display = "none";
+});
+// popupbgEl.addEventListener("click", () => {
+//   popupbgEl.style.display = "none";
+// });
+
 // Panel Tool
 const panelbuttonEl = document.querySelector(".panelbutton");
 const paneltoolcontrolEl = document.querySelector(".paneltoolcontrol");

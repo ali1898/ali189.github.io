@@ -74,6 +74,7 @@
 
 body {
   font-family: Poppins;
+  position: relative;
 }
 .fa {
   --webkit-text-stroke: -1px white;
@@ -703,6 +704,133 @@ body {
   left: 207px;
 }
 /* -----------------------------------main--------------------------------- */
+/* -----------Popup New Letter----------------- */
+.popupbg {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  z-index: 999;
+  top: 0;
+}
+.popupNewLetter {
+  place-content: center;
+  z-index: 1001;
+  background-image: url(../images/popup/pnewletter_bg.webp);
+  position: absolute;
+  width: 624px;
+  height: 420px;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 5%;
+}
+.popup {
+  width: 100%;
+  height: 100%;
+}
+.popup__close {
+  padding: 6px;
+  border: 4px solid white;
+  border-radius: 100%;
+  background-color: black;
+  color: white;
+  font-size: 30px;
+  font-weight: 900;
+  position: absolute;
+  top: -30px;
+  right: -20px;
+  cursor: pointer;
+}
+.popup__title {
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 1.5rem 0;
+}
+.popupMessage {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.popupMessage__text {
+  display: block;
+  margin-bottom: 20px;
+  line-height: 20px;
+}
+.popupMessage__par {
+  margin-bottom: 10px;
+}
+.popupMessageItems {
+  padding-left: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.popupMessageItems__item {
+  margin-bottom: 4px;
+}
+.popupMessageItems__text {
+}
+.popupForm {
+}
+.popupForm__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.popupForm__input {
+  width: 300px;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+}
+.popupForm__input::placeholder {
+  color: var(--color-747474);
+  font-size: 14px;
+  font-weight: 100;
+  font-family: poppins;
+  font-style: italic;
+}
+.popupForm__btn {
+  max-width: 130px;
+  padding: 10px 14px;
+  white-space: nowrap;
+  border: none;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 100;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+.popupForm__btn:hover {
+  background-color: var(--color-F44336);
+}
+.socialIcons {
+  max-width: 300px;
+}
+.socialIconsItems {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+}
+.socialIconsItems__item {
+}
+.socialIconsItems__link {
+  padding: 5px;
+  color: var(--color-000000);
+  display: block;
+  font-size: 18px;
+  transform: rotate(0deg);
+}
+.socialIconsItems__link:hover {
+  border: 1px solid blue;
+  transform: rotateZ(45deg);
+}
 /* ---------------------------Panel Tool----------------------- */
 .paneltool {
   position: fixed;
