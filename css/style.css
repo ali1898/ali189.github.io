@@ -771,10 +771,10 @@ body {
 .popupMessageItems__item {
   margin-bottom: 4px;
 }
-.popupMessageItems__text {
+/* .popupMessageItems__text {
 }
 .popupForm {
-}
+} */
 .popupForm__form {
   display: flex;
   flex-direction: column;
@@ -818,8 +818,8 @@ body {
   align-items: center;
   list-style-type: none;
 }
-.socialIconsItems__item {
-}
+/* .socialIconsItems__item {
+} */
 .socialIconsItems__link {
   padding: 5px;
   color: var(--color-000000);
@@ -1378,7 +1378,7 @@ body {
   bottom: 20%;
   left: 20px;
   width: 50px;
-  height: 400px;
+  height: 350px;
   background: black;
 }
 @keyframes appear {

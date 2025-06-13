@@ -1,0 +1,39 @@
+:root {
+  --transition: all 300ms ease-in 80ms;
+  --color-000000: #000000;
+  --color-FFFFFF: #ffffff;
+  --color-fcf8e3: #fcf8e3;
+  --color-faebcc: #faebcc;
+  --color-8a6d3b: #8a6d3b;
+  --color-535353: #535353;
+  --color-222222: #222222;
+}
+
+.productContainer {
+  padding: 0 70px;
+  width: 100%;
+  height: 100%;
+}
+
+.breadcrumbs {
+  width: 100%;
+  height: 100%;
+  margin: 2.5rem 0;
+}
+.navigation {
+  width: 100%;
+  height: 100%;
+}
+.breadcrumb {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style-type: none;
+}
+.breadcrumb_item {
+  margin-right: 4px;
+}
+.breadcrumb__link {
+  text-decoration: none;
+  color: var(--color-535353);
+}
