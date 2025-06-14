@@ -8,9 +8,9 @@ popup__closeEl.addEventListener("click", () => {
   popupNewLetterEl.style.display = "none";
   popupbgEl.style.display = "none";
 });
-// popupbgEl.addEventListener("click", () => {
-//   popupbgEl.style.display = "none";
-// });
+popupbgEl.addEventListener("click", () => {
+  popupbgEl.style.display = "none";
+});
 
 // Panel Tool
 const panelbuttonEl = document.querySelector(".panelbutton");
@@ -46,30 +46,22 @@ layoutcontrol__updateEl.addEventListener("click", () => {
 });
 
 // Initialize swiper instance
-const swiper = new Swiper(".slider-container", {
-  effect: "fade",
-  speed: 1300,
-  autoplay: { delay: 4000 },
-  navigation: {
-    prevEl: "#slide-prev",
-    nextEl: "#slide-next",
-  },
-});
-
-const swiper2 = new Swiper(".wrapper", {
-  loop: true,
-  // autoplay: { delay: 4000 },
-  navigation: {
-    nextEl: ".centerWrap__arrowleft",
-    prevEl: ".centerWrap__arrowright",
-  },
-});
-
-// const swiper3 = new Swiper(".wrapperN", {
-//   loop: true,
+// const swiper = new Swiper(".slider-container", {
+//   effect: "fade",
+//   speed: 1300,
+//   autoplay: { delay: 4000 },
 //   navigation: {
-//     nextEl: ".centerWrap__arrowleftN",
-//     prevEl: ".centerWrap__arrowrightN",
+//     prevEl: "#slide-prev",
+//     nextEl: "#slide-next",
+//   },
+// });
+
+// const swiper2 = new Swiper(".wrapper", {
+//   loop: true,
+//   // autoplay: { delay: 4000 },
+//   navigation: {
+//     nextEl: ".centerWrap__arrowleft",
+//     prevEl: ".centerWrap__arrowright",
 //   },
 // });
 
@@ -96,3 +88,16 @@ window.onscroll = () => {
     }
   });
 };
+
+// Product
+// const secondbtnEl = document.querySelectorAll(".secondbtn");
+// const breadcrumb_itemEl = document.querySelector(".breadcrumb_item");
+// const productRowRight__titleEl = document.querySelector(
+//   ".productRowRight__title"
+// );
+
+// secondbtnEl[0].addEventListener("click", () => {
+//   breadcrumb_itemEl.textContent = productRowRight__titleEl.textContent;
+//   console.log(breadcrumb_itemEl.textContent);
+//   console.log(productRowRight__titleEl.textContent);
+// });

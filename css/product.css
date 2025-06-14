@@ -6,19 +6,18 @@
   --color-faebcc: #faebcc;
   --color-8a6d3b: #8a6d3b;
   --color-535353: #535353;
+  --color-666666: #666666;
+  --color-6e6e6e: #6e6e6e;
+  --color-53535371: #53535334;
   --color-222222: #222222;
-}
-
-.productContainer {
-  padding: 0 70px;
-  width: 100%;
-  height: 100%;
+  --color-F5F5F5: #f5f5f5;
 }
 
 .breadcrumbs {
   width: 100%;
   height: 100%;
-  margin: 2.5rem 0;
+  padding: 2rem 0;
+  background: var(--color-F5F5F5);
 }
 .navigation {
   width: 100%;
@@ -36,4 +35,205 @@
 .breadcrumb__link {
   text-decoration: none;
   color: var(--color-535353);
+}
+
+.productContainer {
+  padding: 0 70px;
+  width: 100%;
+  height: 100%;
+  background: var(--color-F5F5F5);
+}
+.primaryBlock {
+  padding-bottom: 1rem;
+  background-color: var(--color-FFFFFF);
+}
+/* .product {
+}
+.productContainer {
+} */
+.productRow {
+  display: flex;
+  margin: 1rem;
+}
+/* .productRowLeft {
+} */
+.viweFullSize {
+  max-width: 436px;
+  max-height: 480px;
+  margin: 1rem;
+  border: 1px solid var(--color-53535371);
+}
+.viweFullSize__img {
+  width: 100%;
+  height: 100%;
+}
+.viweBlock {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  width: 468px;
+  height: 120px;
+  padding: 0 1rem;
+}
+.viweBlock__item {
+  max-width: 115px;
+  max-height: 127px;
+  border: 1px solid var(--color-53535371);
+}
+/* .viweBlock__link {
+} */
+.viweBlock__img {
+  width: 100%;
+  height: 100%;
+}
+
+.productRowRightSec {
+  margin: 2rem;
+}
+/* .productRowRight {
+} */
+.productRowRight__title {
+  margin: 10px 0;
+  font-size: 25px;
+  font-family: Poppins;
+  font-weight: 500;
+  line-height: 35px;
+  color: var(--color-000000);
+  text-transform: none;
+}
+.productRowRight__brand {
+  font-size: 12px;
+  margin: 10px 0 0;
+  text-transform: none;
+  line-height: 30px;
+}
+.productRowRight__text {
+  font-weight: 500;
+}
+.productRowRight__link {
+  color: var(--color-666666);
+  text-decoration: none;
+}
+.productRowRight__parag {
+  margin-bottom: 15px;
+  padding: 6px 0;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: normal;
+}
+/* .productRowRightButtom {
+} */
+.availability {
+  margin-bottom: 1rem;
+  font-weight: 400;
+  color: #72c13d;
+  text-transform: uppercase;
+}
+/* .productRowRightButtomForm {
+} */
+.productRowRightButtom__price {
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 600;
+  color: #f44336;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 10px 10px 0 0;
+}
+.productRowRightButtom__line {
+  margin: 20px 0;
+  border-top: 1px solid var(--color-6e6e6e);
+}
+.quantityBtnWishlist {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+}
+.productRowRightButtomQuantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ProductRowRightButtomQuantity__label {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 0;
+  font-weight: 300;
+  line-height: 40px;
+  min-width: 60px;
+}
+.productRowRightButtomQuantityCount {
+  position: relative;
+  width: 80px;
+  height: 50px;
+  overflow: visible;
+  display: flex;
+  border: 1px solid var(--color-53535371);
+}
+.productRowRightButtomQuantityCount__input {
+  width: 90%;
+  height: 100%;
+  border: 1px solid var(--color-53535371);
+  padding: 10px;
+}
+/* .quantityBtns {
+} */
+.productTorwRightButtomQuantity__plus {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  border-bottom: 1px solid var(--color-53535371);
+}
+
+.productTorwRightButtomQuantity__mines {
+  border: none;
+  outline: none;
+  width: 100%;
+  height: 50%;
+  background-color: transparent;
+  cursor: pointer;
+}
+.productTorwRightButtomQuantity__plus:hover,
+.productTorwRightButtomQuantity__mines:hover {
+  background-color: var(--color-53535371);
+}
+.productRowRightButtomForm__btn {
+}
+.wishlist {
+}
+.wishlist__link {
+}
+.socialsharingProduct {
+}
+.socialsharingProductItems {
+}
+.socialsharingProductImtes__item {
+}
+.socialsharingProduct__link {
+}
+.boxImagePd {
+}
+.boxImagePd__img {
+}
+.moreInfoBlock {
+}
+.moreInfoBlock__items {
+}
+.moreInfoBlock__item {
+}
+.moreInfoBlock__link {
+}
+.moreInfoBlockContent {
+}
+.tabContent {
+}
+.tabContent__items {
+}
+.tabContent__item {
 }

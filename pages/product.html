@@ -839,158 +839,283 @@
     <!-- Main -->
     <main class="main">
 
-        <section class="breadcrumbs">
-            <div class="container">
-                <nav class="navigation">
-                    <ul class="breadcrumb">
-                        <li class="breadcrumb_item">
-                            <a href="../index.html" class="breadcrumb__link">
-                                <i class="fa fa-home"></i>
-                                Home
-                            </a>
-                        </li>
-                        <li class="breadcrumb_item">
-                            <span class="breadcrumb__link">
-                                <i class="fa fa-angle-right"></i>
-                                Wishlist
-                            </span>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-
-        <section class="product">
-            <div class="productContainer">
-                <div class="productRow">
-                    <div class="productRowLeft">
-                        <div class="viweFullSize">
-                            <img src="../images/product/227_large_2x.webp" alt="image" class="viweFullSize__img">
-                        </div>
-                        <div class="viweBlock">
-                            <div class="viweBlock__item">
-                                <a href="#" class="viweBlock__link">
-                                    <img src="../images/product/228_large.webp" alt="image" class="viweBlock__img">
-                                </a>
-                            </div>
-                            <div class="viweBlock__item">
-                                <a href="#" class="viweBlock__link">
-                                    <img src="../images/product/228_large.webp" alt="image" class="viweBlock__img">
-                                </a>
-                            </div>
-                        </div>
+        <!-- Popup New Letter -->
+        <div class="popupbg">
+            <div class="popupNewLetter">
+                <div class="popup">
+                    <button class="popup__close">
+                        <i class="fa fa-close"></i>
+                    </button>
+                    <h3 class="popup__title">We want you</h3>
+                    <div class="popupMessage">
+                        <span class="popupMessage__text">We promise we won't write to you often, only for <br> the fun
+                            stuff.</span>
+                        <p class="popupMessage__par">You'll get first access to :</p>
+                        <ul class="popupMessageItems">
+                            <li class="popupMessageItems__item">New product releases.</li>
+                            <li class="popupMessageItems__item">Sales.</li>
+                        </ul>
+                        <p class="popupMessageItems__text">Enter your Email:</p>
                     </div>
-
-                    <div class="productRowRight">
-                        <h1 class="productRowRight__title">14k Girls Gold-Filled Children's Petite Beaded Edge Heart
-                            Locket Necklace, 15</h1>
-                        <h5 class="productRowRight__brand">
-                            <span class="productRowRight__text">Vendor: </span>
-                            <a href="#" class="productRowRight__link">Apollotheme</a>
-                        </h5>
-                        <p class="productRowRight__parag">
-                            Note:the size is Asian size, run smaller than US size,please check the size chart before you
-                            place order.We recommend one size larger to buy The Classic jersey is the ideal...
-                        </p>
-                    </div>
-
-                    <div class="productRowRightButtom">
-                        <p class="availability">Available</p>
-                        <form class="productRowRightButtomForm">
-                            <p class="productRowRightButtom__price">$41.93</p>
-                            <div class="productRowRightButtom__line"></div>
-                            <div class="productRowRightButtomQuantity">
-                                <label for="Quantity" class="ProductRowRightButtomQuantity__label">Quantity</label>
-                                <div class="productRowRightButtomQuantityCount">
-                                    <input type="text" value="1" aria-label="quantity" pattern="[0-9]*" name="quantity"
-                                        id="Quantity" class="productRowRightButtomQuantityCount__input">
-                                    <button class="productTorwRightButtomQuantity__plus">+</button>
-                                    <button class="productTorwRightButtomQuantity__mines">-</button>
-                                </div>
-                            </div>
-                            <button class="productRowRightButtomForm btn">Add to Cart</button>
+                    <div class="popupForm">
+                        <form action="#" class="popupForm__form" method="post" target="_blank">
+                            <input type="email" class="popupForm__input" placeholder="Your email ..."
+                                aria-label="Your email ...">
+                            <button type="submit" class="popupForm__btn">
+                                Subscribe →
+                            </button>
                         </form>
                     </div>
-
-                    <div class="wishlist">
-                        <a href="#" class="wishlist__link">
-                            <i class="fa fa-heart-o"></i>
-                            Add to Wishlist
-                        </a>
-                    </div>
-
-                    <div class="socialsharingProduct">
-                        <ul class="socialsharingProductItems">
-                            <li class="socialsharingProductImtes__item">
-                                <a href="#" class="socialsharingProduct__link">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                            </li>
-                            <li class="socialsharingProductImtes__item">
-                                <a href="#" class="socialsharingProduct__link">
+                    <div class="socialIcons">
+                        <ul class="socialIconsItems">
+                            <li class="socialIconsItems__item">
+                                <a target="_blank" href="https://www.facebook.com" class="socialIconsItems__link">
                                     <i class="fa fa-facebook"></i>
                                 </a>
                             </li>
-                            <li class="socialsharingProductImtes__item">
-                                <a href="#" class="socialsharingProduct__link">
+                            <li class="socialIconsItems__item">
+                                <a target="_blank" href="https://www.twitter.com" class="socialIconsItems__link">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="socialIconsItems__item ">
+                                <a target="_blank" href="https://www.your-shop.com/feed/"
+                                    class="socialIconsItems__link">
+                                    <i class="fa fa-rss"></i>
+                                </a>
+                            </li>
+                            <li class="socialIconsItems__item">
+                                <a target="_blank" href="https://www.youtube.com" class="socialIconsItems__link">
+                                    <i class="fa fa-youtube"></i>
+                                </a>
+                            </li>
+                            <li class="socialIconsItems__item">
+                                <a target="_blank" href="https://www.google-plus.com" class="socialIconsItems__link">
                                     <i class="fa fa-google-plus"></i>
-                                </a>
-                            </li>
-                            <li class="socialsharingProductImtes__item">
-                                <a href="#" class="socialsharingProduct__link">
-                                    <i class="fa fa-linkedin"></i>
-                                </a>
-                            </li>
-                            <li class="socialsharingProductImtes__item">
-                                <a href="#" class="socialsharingProduct__link">
-                                    <i class="fa fa-pinterest-p"></i>
                                 </a>
                             </li>
                         </ul>
                     </div>
-
-                    <div class="boxImagePd">
-                        <img src="../images/product/img_product_detail_2x.avif" alt="" class="boxImagePd__img">
+                </div>
+            </div>
+        </div>
+        <!-- Panel Tool -->
+        <div class="paneltool">
+            <div class="paneltoolcontrol">
+                <div class="panelbutton">
+                    <img src="../images/paneltool/params.svg" alt="panelbutton" class="panelbutton__img">
+                </div>
+                <div class="panelcontent">
+                    <div class="panelinner">
+                        <span class="panelinner__title">Panel Tool</span>
+                        <div class="groupinput">
+                            <label class="goupinput__control">
+                                <img src="../images/paneltool/pin.svg" alt="pin" class="groupinput__img">
+                                Float style
+                            </label>
+                            <div class="paneltoolupdate">
+                                <span class="paneltoolupdate__text">Float header</span>
+                                <div class="floatcontrol">
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch__input"
+                                            id="floatHeader">
+                                        <label for="floatHeader" class="onoffswitchlabel">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="paneltoolupdate">
+                                <span class="paneltoolupdate__text">Float Topbar</span>
+                                <div class="floatcontrol">
+                                    <div class="onoffswitch">
+                                        <input type="checkbox" name="onoffswitch" class="onoffswitch__input"
+                                            id="floatHeader">
+                                        <label for="floatHeader" class="onoffswitchlabel">
+                                            <span class="onoffswitch-inner"></span>
+                                            <span class="onoffswitch-switch"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="groupinput">
+                            <label class="goupinput__control">
+                                <i class="fa fa-desktop"></i>
+                                Layout Mode
+                            </label>
+                            <div class="layoutcontrol">
+                                <span class="layoutcontrol__update layoutcontrol__update--active">Default</span>
+                            </div>
+                            <div class="layoutcontrol">
+                                <span class="layoutcontrol__update">Boxed large</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+        </div>
 
-
-                <div class="moreInfoBlock">
-                    <ul class="moreInfoBlock__items">
-                        <li class="moreInfoBlock__item">
-                            <a href="#idTab1" class="moreInfoBlock__link" data-toggle="tab">More info</a>
-                        </li>
-                        <li class="moreInforBlock__item">
-                            <a href="#idTab2" class="moreInfoBlock__link" data-toggle="tab">Custom Tab 1</a>
-                        </li>
-                        <li class="moreInforBlock__item">
-                            <a href="#idTab3" class="moreInfoBlock__link" data-toggle="tab">Custom Tab 2</a>
-                        </li>
-                        <li class="moreInforBlock__item">
-                            <a href="#idTab4" class="moreInfoBlock__link" data-toggle="tab">Reviews</a>
-                        </li>
-                    </ul>
-                    <div class="moreInfoBlockContent">
-                        <section class="tabContent">
-                            <ul class="tabContent__items">
-                                <li class="tabContent__item">
-                                    Note:the size is Asian size, run smaller than US size,please check the size chart
-                                    before
-                                    you place order.We recommend one size larger to buy
+        <!-- Product -->
+        <section class="product">
+            <div class="productContainer">
+                <div class="primaryBlock">
+                    <section class="breadcrumbs">
+                        <nav class="navigation">
+                            <ul class="breadcrumb">
+                                <li class="breadcrumb_item">
+                                    <a href="../index.html" class="breadcrumb__link">
+                                        <i class="fa fa-home"></i>
+                                        Home
+                                    </a>
                                 </li>
-                                <li class="tabContent__item">
-                                    The Classic jersey is the ideal for the cyclist who wants excellent comfort and
-                                    performance during your ride.
-                                </li>
-                                <li class="tabContent__item">
-                                    We are bicycle supplies factory,produce many kinds of cycling kit and uniforms,high
-                                    quality and good design
+                                <li class="breadcrumb_item">
+                                    <span class="breadcrumb__link">
+                                        <i class="fa fa-angle-right"></i>
+                                        Wishlist
+                                    </span>
                                 </li>
                             </ul>
-                        </section>
-                        <section class="tabContent">Content Custom Tab 1</section>
-                        <section class="tabContent">Content Custom Tab 2</section>
-                        <section class="tabContent">Content Custom Tab 3</section>
+                        </nav>
+                    </section>
+                    <div class="productRow">
+                        <div class="productRowLeft">
+                            <div class="viweFullSize">
+                                <img src="../images/product/227_large_2x.webp" alt="image" class="viweFullSize__img">
+                            </div>
+                            <div class="viweBlock">
+                                <div class="viweBlock__item">
+                                    <a href="#" class="viweBlock__link">
+                                        <img src="../images/product/228_large.webp" alt="image" class="viweBlock__img">
+                                    </a>
+                                </div>
+                                <div class="viweBlock__item">
+                                    <a href="#" class="viweBlock__link">
+                                        <img src="../images/product/228_large.webp" alt="image" class="viweBlock__img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="productRowRightSec">
+                            <div class="productRowRight">
+                                <h1 class="productRowRight__title">14k Girls Gold-Filled Children's Petite Beaded Edge
+                                    Heart
+                                    Locket Necklace, 15</h1>
+                                <h5 class="productRowRight__brand">
+                                    <span class="productRowRight__text">Vendor: </span>
+                                    <a href="#" class="productRowRight__link">Apollotheme</a>
+                                </h5>
+                                <p class="productRowRight__parag">
+                                    Note:the size is Asian size, run smaller than US size,please check the size chart
+                                    before
+                                    you
+                                    place order.We recommend one size larger to buy The Classic jersey is the ideal...
+                                </p>
+                            </div>
+                            <div class="productRowRightButtom">
+                                <p class="availability">Available</p>
+                                <form class="productRowRightButtomForm">
+                                    <p class="productRowRightButtom__price">$41.93</p>
+                                    <div class="productRowRightButtom__line"></div>
+                                    <div class="quantityBtnWishlist">
+                                        <div class="productRowRightButtomQuantity">
+                                            <label for="Quantity"
+                                                class="ProductRowRightButtomQuantity__label">Quantity</label>
+                                            <div class="productRowRightButtomQuantityCount">
+                                                <input type="text" value="1" aria-label="quantity" pattern="[0-9]*"
+                                                    name="quantity" id="Quantity"
+                                                    class="productRowRightButtomQuantityCount__input">
+                                                <div class="quantityBtns">
+                                                    <button class="productTorwRightButtomQuantity__plus">+</button>
+                                                    <button class="productTorwRightButtomQuantity__mines">-</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="productRowRightButtomForm__btn">Add to Cart</button>
+                                        <div class="wishlist">
+                                            <a href="#" class="wishlist__link">
+                                                <i class="fa fa-heart-o"></i>
+                                                Add to Wishlist
+                                            </a>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="socialsharingProduct">
+                                <ul class="socialsharingProductItems">
+                                    <li class="socialsharingProductImtes__item">
+                                        <a href="#" class="socialsharingProduct__link">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="socialsharingProductImtes__item">
+                                        <a href="#" class="socialsharingProduct__link">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                    </li>
+                                    <li class="socialsharingProductImtes__item">
+                                        <a href="#" class="socialsharingProduct__link">
+                                            <i class="fa fa-google-plus"></i>
+                                        </a>
+                                    </li>
+                                    <li class="socialsharingProductImtes__item">
+                                        <a href="#" class="socialsharingProduct__link">
+                                            <i class="fa fa-linkedin"></i>
+                                        </a>
+                                    </li>
+                                    <li class="socialsharingProductImtes__item">
+                                        <a href="#" class="socialsharingProduct__link">
+                                            <i class="fa fa-pinterest-p"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="boxImagePd">
+                                <img src="../images/product/img_product_detail_2x.avif" alt="" class="boxImagePd__img">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="moreInfoBlock">
+                        <ul class="moreInfoBlock__items">
+                            <li class="moreInfoBlock__item">
+                                <a href="#idTab1" class="moreInfoBlock__link" data-toggle="tab">More info</a>
+                            </li>
+                            <li class="moreInforBlock__item">
+                                <a href="#idTab2" class="moreInfoBlock__link" data-toggle="tab">Custom Tab 1</a>
+                            </li>
+                            <li class="moreInforBlock__item">
+                                <a href="#idTab3" class="moreInfoBlock__link" data-toggle="tab">Custom Tab 2</a>
+                            </li>
+                            <li class="moreInforBlock__item">
+                                <a href="#idTab4" class="moreInfoBlock__link" data-toggle="tab">Reviews</a>
+                            </li>
+                        </ul>
+                        <div class="moreInfoBlockContent">
+                            <section class="tabContent">
+                                <ul class="tabContent__items">
+                                    <li class="tabContent__item">
+                                        Note:the size is Asian size, run smaller than US size,please check the size
+                                        chart
+                                        before
+                                        you place order.We recommend one size larger to buy
+                                    </li>
+                                    <li class="tabContent__item">
+                                        The Classic jersey is the ideal for the cyclist who wants excellent comfort and
+                                        performance during your ride.
+                                    </li>
+                                    <li class="tabContent__item">
+                                        We are bicycle supplies factory,produce many kinds of cycling kit and
+                                        uniforms,high
+                                        quality and good design
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="tabContent">Content Custom Tab 1</section>
+                            <section class="tabContent">Content Custom Tab 2</section>
+                            <section class="tabContent">Content Custom Tab 3</section>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1046,7 +1171,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1088,7 +1213,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1130,7 +1255,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1172,7 +1297,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1214,7 +1339,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1256,7 +1381,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1298,7 +1423,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1340,7 +1465,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1414,7 +1539,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1456,7 +1581,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1498,7 +1623,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1540,7 +1665,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1582,7 +1707,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1624,7 +1749,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1666,7 +1791,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -1708,7 +1833,7 @@
                                                                     </a>
                                                                 </div>
                                                                 <div class="cart">
-                                                                    <a href="pages/product.html" class="cart__btn">
+                                                                    <a href="product.html" class="cart__btn">
                                                                         <i class="fa fa-plus-circle"
                                                                             aria-hidden="true"></i>
                                                                     </a>
@@ -2017,7 +2142,7 @@
             </section>
         </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 
 </html>
