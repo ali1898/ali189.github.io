@@ -90,14 +90,49 @@ window.onscroll = () => {
 };
 
 // Product
-// const secondbtnEl = document.querySelectorAll(".secondbtn");
-// const breadcrumb_itemEl = document.querySelector(".breadcrumb_item");
-// const productRowRight__titleEl = document.querySelector(
-//   ".productRowRight__title"
-// );
 
-// secondbtnEl[0].addEventListener("click", () => {
-//   breadcrumb_itemEl.textContent = productRowRight__titleEl.textContent;
-//   console.log(breadcrumb_itemEl.textContent);
-//   console.log(productRowRight__titleEl.textContent);
-// });
+// moreInfoBlock
+const moreInfoBlock__itemEl = document.querySelector(".moreInfoBlock__item ");
+const moreInfoBlockContentEl = document.querySelector(".moreInfoBlockContent");
+const tabContentEl = document.querySelector(".tabContent");
+const moreInfoBlock__linkEl = document.querySelector(".moreInfoBlock__link");
+moreInfoBlock__itemEl.addEventListener("click", () => {
+  moreInfoBlockContentEl.textContent = tabContentEl.textContent;
+  moreInfoBlockContentEl.classList.add("tabContent__item--active");
+  moreInfoBlock__linkEl.classList.add("moreInfoBlock__link--active");
+  console.log(tabContentEl.textContent);
+});
+
+// Quantity
+const productRowRightButtomQuantityCount__inputEl = document.querySelector(
+  ".productRowRightButtomQuantityCount__input"
+);
+const productTorwRightButtomQuantity__plusEl = document.querySelector(
+  ".productTorwRightButtomQuantity__plus"
+);
+const productTorwRightButtomQuantity__minesEl = document.querySelector(
+  ".productTorwRightButtomQuantity__mines"
+);
+productTorwRightButtomQuantity__minesEl.addEventListener("click", () => {
+  let currentValue = productRowRightButtomQuantityCount__inputEl.textContent;
+  let converToInt = +currentValue;
+  let newValue = converToInt - 1;
+  if (newValue <= 0) {
+    newValue = 1;
+  }
+  console.log(newValue);
+
+  productRowRightButtomQuantityCount__inputEl.textContent = newValue;
+  console.log(productRowRightButtomQuantityCount__inputEl.textContent);
+});
+productTorwRightButtomQuantity__plusEl.addEventListener("click", () => {
+  let currentValue = productRowRightButtomQuantityCount__inputEl.textContent;
+  let converToInt = +currentValue;
+  let newValue = converToInt + 1;
+  if (newValue >= 9) {
+    newValue = 9;
+  }
+  console.log(newValue);
+  productRowRightButtomQuantityCount__inputEl.textContent = newValue;
+  console.log(productRowRightButtomQuantityCount__inputEl.textContent);
+});
