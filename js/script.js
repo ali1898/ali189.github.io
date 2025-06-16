@@ -90,6 +90,16 @@ window.onscroll = () => {
 };
 
 // Product
+const cart__btnEl = document.querySelector(".cart__btn");
+const breadcrumb__linkEl = document.querySelector(".breadcrumb__link");
+const productRowRight__titleEl = document.querySelector(
+  ".productRowRight__title"
+);
+
+cart__btnEl.addEventListener("click", () => {
+  console.log(breadcrumb__linkEl.textContent);
+  console.log(productRowRight__titleEl.textContent);
+});
 
 // moreInfoBlock
 const moreInfoBlock__itemEl = document.querySelector(".moreInfoBlock__item ");
@@ -113,26 +123,23 @@ const productTorwRightButtomQuantity__plusEl = document.querySelector(
 const productTorwRightButtomQuantity__minesEl = document.querySelector(
   ".productTorwRightButtomQuantity__mines"
 );
-productTorwRightButtomQuantity__minesEl.addEventListener("click", () => {
-  let currentValue = productRowRightButtomQuantityCount__inputEl.textContent;
-  let converToInt = +currentValue;
-  let newValue = converToInt - 1;
+function reduceNumber(e) {
+  let value = +productRowRightButtomQuantityCount__inputEl.value;
+  newValue = value - 1;
   if (newValue <= 0) {
     newValue = 1;
   }
-  console.log(newValue);
-
-  productRowRightButtomQuantityCount__inputEl.textContent = newValue;
-  console.log(productRowRightButtomQuantityCount__inputEl.textContent);
-});
-productTorwRightButtomQuantity__plusEl.addEventListener("click", () => {
-  let currentValue = productRowRightButtomQuantityCount__inputEl.textContent;
-  let converToInt = +currentValue;
-  let newValue = converToInt + 1;
+  productRowRightButtomQuantityCount__inputEl.value = newValue;
+  e.preventDefault();
+}
+function addNumber(e) {
+  let value = +productRowRightButtomQuantityCount__inputEl.value;
+  newValue = value + 1;
   if (newValue >= 9) {
     newValue = 9;
   }
-  console.log(newValue);
-  productRowRightButtomQuantityCount__inputEl.textContent = newValue;
-  console.log(productRowRightButtomQuantityCount__inputEl.textContent);
-});
+  productRowRightButtomQuantityCount__inputEl.value = newValue;
+  e.preventDefault();
+}
+productTorwRightButtomQuantity__minesEl.addEventListener("click", reduceNumber);
+productTorwRightButtomQuantity__plusEl.addEventListener("click", addNumber);
